@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 int main(int argc, char **argv) {
-	printf("Hello World\n");
-	printf("Hello Fraital as well\n")
+	printf("Hallo Welt\n");
+	printf("Hello Freital as well\n");
 	return 0;
 }
