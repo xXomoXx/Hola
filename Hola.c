@@ -2,6 +2,6 @@
 #include <stdio.h>
 
 int main(int argc, char **argv) {
-	printf("\n ----------\nHello World!\n ----------\n");
+	printf("\n\t----------\n\tHello World!\n\t----------\n");
 	return 0;
 }
