@@ -19,7 +19,7 @@ Vagrant.configure("2") do |config|
  #   config.vbguest.auto_update = false
  # end 
 
-  Anz=1
+  Anz=2
   (1..Anz).each do | i |
     config.vm.define "zs-#{i}" do |zs|
       zs.vm.network "private_network", ip: "192.168.179.#{1+i}"
@@ -28,7 +28,7 @@ Vagrant.configure("2") do |config|
   #       vb.check_guest_additions = false
          vb.memory = "2048"
          vb.cpus = 2
-         vb.name = "Zielsystem #{i}"
+         vb.name = "targethost#{i}"
         end
     end
   end
