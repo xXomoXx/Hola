@@ -19,7 +19,7 @@ Vagrant.configure("2") do |config|
  #   config.vbguest.auto_update = false
  # end 
 
-  Anz=2
+  Anz=1
   (1..Anz).each do | i |
     config.vm.define "zs-#{i}" do |zs|
       zs.vm.network "private_network", ip: "192.168.179.#{1+i}"
