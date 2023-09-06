@@ -21,9 +21,9 @@ Vagrant.configure("2") do |config|
 
   Anz=2
   (1..Anz).each do | i |
-    config.vm.define "zs-#{i}" do |zs|
-      zs.vm.network "private_network", ip: "192.168.179.#{1+i}"
-      zs.vm.provider "virtualbox" do |vb|
+    config.vm.define "target#{i}" do |target|
+      target.vm.network "private_network", ip: "192.168.179.#{1+i}"
+      target.vm.provider "virtualbox" do |vb|
          vb.gui = true
   #       vb.check_guest_additions = false
          vb.memory = "2048"
