@@ -25,10 +25,10 @@ Vagrant.configure("2") do |config|
       target.vm.network "private_network", ip: "192.168.179.#{1+i}"
       target.vm.provider "virtualbox" do |vb|
          vb.gui = true
-         vb.check_guest_additions = false
+    #     vb.check_guest_additions = false
          vb.memory = "2048"
          vb.cpus = 2
-         vb.name = "targethost#{i}"
+         vb.name = "targetvm#{i}"
         end
     end
   end
